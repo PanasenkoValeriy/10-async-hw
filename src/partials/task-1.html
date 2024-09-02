@@ -2,41 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../index.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <a class="home__link" href="../index.html">Home</a>
-        <section class="todo__section">
-            <h1 class="todo__title">
-                TODO LIST
+        <a href="../index.html" class="home__link">Home</a>
 
-            </h1>
+        <section class="todo__section">
+            <h1 class="title">To-Do List</h1>
+
             <form class="todo__form">
                 <label class="todo__label">
-                    <input class="todo__input" type="checkbox" name="task-1">
-                    Gym
+                    <input name="task-1" type="checkbox" class="todo__input" />
+                    Learn English
                 </label>
+
                 <label class="todo__label">
-                    <input class="todo__input" type="checkbox" name="task-2">
+                    <input name="task-2" type="checkbox" class="todo__input" />
                     Pool
                 </label>
+
                 <label class="todo__label">
-                    <input class="todo__input" type="checkbox" name="task-3">
-                    Breakfast
-                </label>
-                <label class="todo__label">
-                    <input class="todo__input" type="checkbox" name="task-3">
-                    Nap
+                    <input name="task-3" type="checkbox" class="todo__input" />
+                    Reading
                 </label>
             </form>
         </section>
     </div>
-    <script src="../js/task-1.js" type="module"></script>
 </body>
 
 </html>
