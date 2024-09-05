@@ -1,0 +1,2 @@
+const e=document.querySelector(".feedback__form");!function(){const t=localStorage.getItem("feedbackData");if(t){const a=JSON.parse(t);e.elements.name.value=a.name,e.elements.message.value=a.message}}(),e.addEventListener("submit",(function(t){t.preventDefault();const a={name:t.target.name.value,message:t.target.message.value};localStorage.setItem("feedbackData",JSON.stringify(a)),e.reset()}));
+//# sourceMappingURL=task-2.65957ec3.js.map
