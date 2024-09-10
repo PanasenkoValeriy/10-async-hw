@@ -1,21 +1,21 @@
 {
-  "name": "hw9",
+  "name": "10-async-hw",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://PanasenkoValeriy.github.io/hw9",
+  "homepage": "https://PanasenkoValeriy.github.io/10-async-hw",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /hw9/"
+    "build": "parcel build src/*.html --public-url /10-async-hw/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PanasenkoValeriy/hw9.git"
+    "url": "git+https://github.com/PanasenkoValeriy/10-async-hw.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PanasenkoValeriy/hw9/issues"
+    "url": "https://github.com/PanasenkoValeriy/10-async-hw/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
