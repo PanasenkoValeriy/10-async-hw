@@ -1,27 +1,12 @@
-const todoForm = document.querySelector('.todo__form');
-const selectedTodos = JSON.parse(localStorage.getItem('selectedTodos')) || {};
+let count = 0;
+const maxMessages = 5;
 
-initTodoForm();
+let timerId = setInterval(() => {
+  count++;
 
-todoForm.addEventListener('change', onCheckboxChange);
-
-function onCheckboxChange(e) {
-  selectedTodos[e.target.name] = e.target.checked;
-  localStorage.setItem('selectedTodos', JSON.stringify(selectedTodos));
-}
-
-function initTodoForm() {
-  const checkedItems = localStorage.getItem('selectedTodos');
-
-  if (checkedItems) {
-    const parsedItems = JSON.parse(checkedItems);
-
-    Object.entries(parsedItems).forEach(([name, checked]) => {
-      const checkbox = todoForm.querySelector(`input[name="${name}"]`);
-
-      if (checkbox) {
-        checkbox.checked = checked;
-      }
-    });
+  console.log(`Повідомлення номер ${count}`);
+  if (count === maxMessages) {
+    clearInterval(timerId);
+    console.log('Повідомлення зупинено');
   }
-}
+}, 1000);

@@ -1,27 +1,26 @@
-.feedback__form {
-  width: 480px;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
 }
 
-.feedback__form > label {
-  width: 100%;
-  margin-bottom: 16px;
-  display: flex;
-  flex-direction: column;
+.box1 {
+  top: 100px;
+  left: 20px;
 }
 
-.feedback__form input,
-.feedback__form textarea {
-  font: inherit;
-  padding: 8px;
-  outline: 1px solid black;
-  margin-top: 10px;
+.box2 {
+  top: 20px;
+  left: 300px;
 }
 
-.feedback__form textarea {
-  resize: none;
+.box3 {
+  top: 400px;
+  left: 600px;
 }
 
-.feedback__form button {
-  padding: 10px;
-  border: 1px solid black;
+.box4 {
+  top: 400px;
+  left: 150px;
 }

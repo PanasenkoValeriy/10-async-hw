@@ -1,38 +1,30 @@
-const userForm = document.querySelector('.user-form');
+const scoreEl = document.querySelector('.score');
+const gameContainer = document.querySelector('.game__container');
 
-userForm.addEventListener('submit', onUserFormSubmit);
+let score = 0;
 
-function onUserFormSubmit(e) {
-  e.preventDefault();
+function createTarget() {
+  const target = document.createElement('div');
+  target.classList.add('target');
 
-  const userLogin = userForm.elements.login.value;
-  const userPassword = userForm.elements.password.value;
+  target.style.top = `${Math.random() * 300}px`;
+  target.style.left = `${Math.random() * 300}px`;
 
-  if (e.submitter.id === 'submit-btn') {
-    const formData = {
-      userLogin,
-      userPassword,
-    };
+  target.addEventListener('click', () => {
+    score++;
+    scoreEl.textContent = score;
+    target.remove();
+  });
 
-    localStorage.setItem('userData', JSON.stringify(formData));
+  gameContainer.appendChild(target);
 
-    alert('The user is registered');
-  }
+  setTimeout(() => {
+    target.remove();
+  }, 1000);
 
-  if (e.submitter.id === 'login-btn') {
-    const formData = {
-      userLogin,
-      userPassword,
-    };
-
-    const savedData = localStorage.getItem('userData');
-
-    if (JSON.stringify(formData) === savedData) {
-      alert('Wellcome!');
-    } else {
-      alert('User not found');
-    }
-  }
-
-  userForm.reset();
+  return target;
 }
+
+setInterval(() => {
+  createTarget();
+}, 1000);
