@@ -1,0 +1,2 @@
+const t=document.getElementById("1"),e=document.getElementById("2"),n=document.getElementById("3"),a=document.getElementById("4");setInterval((function(){t.style.backgroundColor=`rgb(${255*Math.random()}, ${255*Math.random()}, ${255*Math.random()})`,e.style.height=200*Math.random()+"px",e.style.width=200*Math.random()+"px",n.style.transform=`translate(${50*Math.random()}px, ${50*Math.random()}px)`,a.style.transform="scale("+1.3*Math.random()}),1e3);
+//# sourceMappingURL=task-2.bad41cee.js.map

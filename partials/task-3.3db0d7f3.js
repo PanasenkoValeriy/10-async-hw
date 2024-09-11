@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".score"),t=document.querySelector(".game__container"),n=0;setInterval((function(){var o;(o=document.createElement("div")).classList.add("target"),o.style.top="".concat(300*Math.random(),"px"),o.style.left="".concat(300*Math.random(),"px"),o.addEventListener("click",(function(){n++,e.textContent=n,o.remove()})),t.appendChild(o),setTimeout((function(){o.remove()}),1e3)}),1e3)}();
+//# sourceMappingURL=task-3.3db0d7f3.js.map

@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){window.startTimer=function(){const e=document.getElementById("timeInput").value;if(e>0){const t=1e3*e;document.getElementById("message").textContent="Таймер запущено",setTimeout((()=>{document.getElementById("message").textContent="Час вийшов"}),t)}else document.getElementById("message").textContent="Будь ласка, введіть коректний час."}}));
+//# sourceMappingURL=task-4.e4bcd714.js.map

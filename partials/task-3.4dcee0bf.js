@@ -1,0 +1,2 @@
+const e=document.querySelector(".score"),t=document.querySelector(".game__container");let n=0;setInterval((()=>{!function(){const o=document.createElement("div");o.classList.add("target"),o.style.top=300*Math.random()+"px",o.style.left=300*Math.random()+"px",o.addEventListener("click",(()=>{n++,e.textContent=n,o.remove()})),t.appendChild(o),setTimeout((()=>{o.remove()}),1e3)}()}),1e3);
+//# sourceMappingURL=task-3.4dcee0bf.js.map
